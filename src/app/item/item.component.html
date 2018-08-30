@@ -1,0 +1,7 @@
+
+<ul>
+  <li *ngFor="let number of Numbers">{{number}}</li>
+</ul>
+<p>{{myDate}}</p>
+<p *ngIf="!isValid; else notValid">valid</p>
+<ng-template #notValid>this is else</ng-template>
